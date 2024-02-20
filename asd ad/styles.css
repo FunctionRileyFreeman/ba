@@ -1,0 +1,57 @@
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  .neon-background {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff0080, #ff00ff, #8000ff, #0080ff);
+    background-size: 300% 300%;
+    animation: neonGlow 8s ease infinite;
+  }
+  
+  .content {
+    text-align: center;
+    color: white;
+  }
+  
+  .neon-text {
+    color: #ffffff;
+    text-shadow: 0 0 5px #d1f4ff, 0 0 10px #0abdc6, 0 0 20px #0abdc6, 0 0 40px #0abdc6, 0 0 80px #0abdc6;
+    margin: 20px;
+  }
+  
+  .neon-btn {
+    background-color: transparent;
+    color: #0abdc6;
+    border: 1px solid #0abdc6;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #0abdc6;
+    margin-top: 20px;
+  }
+  
+  .neon-btn:hover {
+    color: #ffffff;
+    background-color: #0abdc6;
+    box-shadow: 0 0 10px #0abdc6, 0 0 20px #0abdc6, 0 0 30px #0abdc6, 0 0 40px #0abdc6, 0 0 50px #0abdc6;
+  }
+  
+  @keyframes neonGlow {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
