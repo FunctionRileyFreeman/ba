@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide to Reveal Campfire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="campfire.jpg" as="image">
+    <link rel="preload" href="bush.png" as="image">
+</head>
+<body>
+
+<div id="container">
+    <img src="campfire.jpg" id="campfire" alt="Campfire">
+    <div id="bushContainer" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Slide to reveal the campfire">
+        <img src="bush.png" id="bush" alt="Bush">
+    </div>
+</div>
+
+<noscript>
+  <style>
+    #bushContainer {
+      display: none;
+    }
+    #campfire {
+      display: block;
+    }
+  </style>
+  <p>Slide the bush to reveal the campfire (JavaScript is required for interactive sliding).</p>
+</noscript>
+
+<script src="script.js"></script>
+</body>
+</html>
